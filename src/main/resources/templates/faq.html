@@ -1,0 +1,68 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="fragments/layout :: layout(~{::title}, ~{::#content})">
+<head>
+    <title>FAQ | GoService</title>
+</head>
+<body>
+
+<div id="content">
+    <div th:replace="fragments/header :: header"></div>
+
+    <h1 class="mb-4">Perguntas Frequentes</h1>
+
+    <!-- Pergunta 1 -->
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Como aciono o serviço de assistência à residência?
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Você pode solicitar serviços de assistência para sua casa, 24h por dia, 7 dias por semana, aqui mesmo ou pelo aplicativo.
+
+            Na tela inicial do nosso site ou do seu aplicativo, acesse as opções Solicitar Assistência ou Assistências e Serviços e selecione o tipo de assistência que deseja.
+        </div>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="mb-3">
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                Como faço para redefinir minha senha?
+            </a>
+        </p>
+        <div class="collapse" id="collapseTwo">
+            <div class="card card-body">
+                Para redefinir sua senha, siga os passos a seguir:
+                <ol>
+                    <li>Acesse a página de login do nosso site.</li>
+                    <li>Clique na opção "Esqueci minha senha".</li>
+                    <li>Informe o endereço de e-mail associado à sua conta.</li>
+                    <li>Clique em "Enviar" e siga as instruções enviadas por e-mail para redefinir sua senha.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="mb-3">
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                Como entro em contato com o suporte ao cliente?
+            </a>
+        </p>
+        <div class="collapse" id="collapseThree">
+            <div class="card card-body">
+                Você pode entrar em contato com nosso suporte ao cliente de várias maneiras:
+                <ul>
+                    <li>Envie um e-mail para <a href="mailto:suporte@exemplo.com">suporte@exemplo.com</a>.</li>
+                    <li>Ligue para o número (11) 3333-3333 durante o horário comercial.</li>
+                    <li>Preencha o formulário de contato em nosso site.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div th:replace="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>
