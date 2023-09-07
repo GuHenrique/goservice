@@ -4,11 +4,10 @@
     <title>Login | GoService</title>
 </head>
 <body>
-
 <main id="content" class="d-flex justify-content-center align-items-center" style="min-height: 100vh">
-    <div style="width: 22rem">
+    <div style="width: 25rem">
         <form method="post" th:action="@{/auth/login}">
-            <h1 class="h3 mb-3 fw-normal text-center">Login | GoService</h1>
+            <h1 class="h3 mb-3 fw-normal text-center"><img th:src="@{/assets/img/logos/3.png}" alt="Logomarca GoService" width="100px" height="auto">Login | GoService</h1>
 
             <div th:if="${successMessage != null}" th:text="${successMessage}" class="alert alert-success" role="alert"></div>
             <div th:if="${errorMessage != null}" th:text="${errorMessage}" class="alert alert-danger" role="alert"></div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org" th:replace="fragments/layout :: layout(~{::title}, ~{::#content})">
 <head>
+    <meta charset="UTF-8">
     <title>GoService | Home</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
@@ -36,9 +37,36 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <div class="mainBox mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/prormos/5.png" class="card-img-top" alt="Card promoção">
+                    <div class="card-body">
+                        <p class="card-text">Procurando por um estilo único que reflita sua personalidade? Deixe nossos Personal Shoppers fazerem todo o trabalho para você! Com um toque de elegância e uma pitada de sofisticação, estamos aqui para criar o guarda-roupa dos seus sonhos. Experimente a exclusividade da moda sob medida e redescubra seu estilo com nossos especialistas. Vista-se com confiança, escolha qualidade e abrace a individualidade. Seu estilo, sua história, sua jornada - com nosso Personal Shopper ao seu lado. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/prormos/6.png" class="card-img-top" alt="Card promoção">
+                    <div class="card-body">
+                        <p class="card-text">Quer transformar suas redes sociais em uma sensação instantânea? Deixe-nos ser seu guia para o estrelato digital! Com estratégias testadas e comprovadas, estamos prontos para impulsionar seu perfil para as alturas da fama virtual. Aumente seu alcance, conquiste seguidores leais e mergulhe no mundo das curtidas e compartilhamentos. Deixe sua presença online brilhar com nosso apoio especializado. O sucesso no Instagram, Facebook, Twitter e muito mais está a apenas um clique de distância.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/prormos/7.png" class="card-img-top" alt="Card promoção">
+                    <div class="card-body">
+                        <p class="card-text">A confusão está atrapalhando seu fluxo de trabalho? Deixe nossos especialistas em organização de projetos assumirem o controle. Com uma abordagem meticulosa, eles transformam o caos em ordem, garantindo que cada tarefa seja concluída no prazo. Com eles ao seu lado, você nunca mais perderá uma data importante ou se sentirá sobrecarregado. Deixe-nos cuidar dos detalhes para que você possa se concentrar no sucesso de seus projetos. Deixe a organização ser a chave para o seu sucesso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div th:replace="fragments/footer :: footer"></div>
 </div>
-
 </body>
 </html>
